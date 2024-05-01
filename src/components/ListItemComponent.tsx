@@ -30,7 +30,7 @@ function ListItemComponent({ type }: { type: string }) {
   // console.log(data)
 
   const handleToggle = (value: number) => () => {
-    const dataNew = data.filter((_v: any, i: number) => {
+    const dataNew = dataFilter.filter((_v: any, i: number) => {
       return i == value
     })
 
@@ -41,7 +41,7 @@ function ListItemComponent({ type }: { type: string }) {
   }
 
   const handleDelete = (value: number) => () => {
-    const dataNew = data.filter((_v: any, i: number) => {
+    const dataNew = dataFilter.filter((_v: any, i: number) => {
       return i != value
     })
 
